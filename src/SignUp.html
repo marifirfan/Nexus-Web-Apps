@@ -29,7 +29,7 @@
             </button>
         </div>
 
-        <!-- List -->
+        <!-- Navbar Links -->
         <ul id="menu" class="hidden md:flex space-x-[30px] font-bold text-[16px] text-blue-text">
             <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
             <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
@@ -38,13 +38,36 @@
 
         <!-- Sign In & Sign Up -->
         <ul class="flex items-center space-x-[24px] font-bold text-[16px]">
-            <li class="text-blue1 hover:text-blue-600 transition duration-300"><a href="SignIn.html">Sign in</a></li>
-            <div
-                class="w-[184px] h-[47px] bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105">
-                <button class="text-white"><a href="SignUp.html">SignUp</a></button>
-            </div>
+            <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm md:text-[16px] sm:text-[12px]"><a
+                    href="SignIn.html">Sign in</a></li>
+            <li>
+                <div
+                    class="w-[184px] h-[47px] bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105 ">
+                    <button class="text-sm md:text-white sm:text-[12px]"><a href="SignUp.html">SignUp</a></button>
+                </div>
+            </li>
         </ul>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-[100px] left-0 w-full bg-white shadow-md hidden">
+            <ul class="flex flex-col space-y-4 p-4">
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">More</a></li>
+                <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm"><a href="SignIn.html">Sign
+                        in</a></li>
+                <li>
+                    <div
+                        class="w-full bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105">
+                        <button class="w-full text-sm"><a href="SignUp.html">SignUp</a></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <script src="navbar.js">
+    </script>
 
     <section>
         <div class="min-h-screen flex flex-col items-center justify-center py-6 px-4">
