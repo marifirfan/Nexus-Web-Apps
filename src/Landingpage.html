@@ -49,104 +49,123 @@
             </div>
         </ul>
     </nav>
-    
+
     <section>
         <!-- GREETING TEXT -->
-        <div class="flex items-center justify-between mt-[70px] mx-[182px]">
+        <div
+            class="flex flex-col md:flex-row items-center justify-between mt-[70px] mx-[20px] md:mx-[80px] lg:mx-[182px]">
             <!-- Teks -->
-            <div class="w-[800px] text-center">
-                <h1 class="text-blue-text font-extrabold text-[55px] px-[100px] drop-shadow-xl">
+            <div class="md:w-[800px] text-center">
+                <h1
+                    class="text-blue-text font-extrabold text-[32px] sm:text-[40px] md:text-[55px] px-[10px] sm:px-[50px] md:px-[100px] drop-shadow-xl">
                     Welcome To Nexus Network Education!
                 </h1>
-                <p class="text-blue-black font-semibold text-[24px] px-[130px] mt-[34px]">
+                <p
+                    class="text-blue-black font-semibold text-[16px] sm:text-[18px] md:text-[24px] px-[20px] sm:px-[60px] md:px-[130px] mt-[20px] md:mt-[34px]">
                     Empower Your Learning Journey with Nexus, Learn, Grow, and Succeed with Expert-Guided Courses
                 </p>
             </div>
 
             <!-- Ilustrasi Landing Page 1 -->
-            <div>
-                <img src="/img/LandingPage1Illustrasion.png" alt="" class="w-[600px] h-auto" />
+            <div class="mt-[30px] md:mt-0">
+                <img src="/img/LandingPage1Illustrasion.png" alt=""
+                    class="w-[300px] sm:w-[400px] md:w-[600px] h-auto" />
             </div>
         </div>
 
         <!-- Button -->
-        <div class="mb-[120px]">
+        <div class="mb-[100px] md:mb-[150px] flex justify-center">
             <button
-                class="w-[287px] h-[73px] bg-blue1 rounded-[500px] mx-[804px] mt-[60px] mb-[125px] font-bold text-[24px]
-                 text-white drop-shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-blue-black">
+                class="w-[200px] sm:w-[250px] md:w-[287px] h-[50px] sm:h-[60px] md:h-[73px] bg-blue1 rounded-[500px] font-bold text-[18px] sm:text-[20px] md:text-[24px] text-white drop-shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-blue-black mt-[40px] md:mt-[60px]">
                 Explore Now
             </button>
         </div>
-
     </section>
 
-    <!-- FOOTER 1 -->
-    <footer class="bg-[#EAEAEA] h-[348px] relative">
-        <div class="pl-[254px] pt-[100px] text-blue-black">
-            <p class="text-[30px] font-medium">Program Terbaru Kami</p>
-            <p class="text-[18px] pr-[1246px] font-light mt-[13px]">
-                Bekerja sama dengan partner, kami menyelenggarakan beberapa program untuk mendukung Pelajar Indonesia.
-            </p>
-        </div>
 
-        <!-- Card dengan posisi absolute -->
-        <a href="#"
-            class="drop-shadow-[100px] mt-[45px] absolute left-[960px] top-[37px] flex flex-col items-center bg-white border 
-            border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                src="/img/Figma-to-Tailwind.png" alt="">
-            <div class="flex flex-col justify-between p-4 leadinga-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                    acquisitions 2021</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
+<!-- FOOTER 1 -->
+<footer class="bg-[#EAEAEA] py-[50px]">
+    <div class="w-full mx-auto max-w-screen-xl text-center px-4 sm:px-6 lg:px-8">
+        <!-- Judul Program Terbaru -->
+        <p class="font-medium text-[30px] text-blue-black">Program Terbaru Kami</p>
+
+        <!-- Deskripsi -->
+        <p class="mt-[12px] text-[16px] text-blue-black">
+            Bekerja sama dengan partner, kami menyelenggarakan beberapa program untuk mendukung Pelajar Indonesia.
+        </p>
+
+        <!-- Kartu Program -->
+        <div class="flex justify-center mt-[30px]">
+            <div class="flex w-[720px] h-[263px] bg-white shadow-lg rounded-lg overflow-hidden">
+                <!-- Gambar -->
+                <img src="/img/Figma-to-Tailwind.png" alt="AWS Logo"
+                    class="w-[183px] h-[183px] object-contain m-[20px]">
+                <!-- Deskripsi Kartu -->
+                <div class="flex flex-col justify-center px-[20px]">
+                    <p class="font-extralight text-blue-black">Oleh Amazon Web Service (AWS)</p>
+                    <p class="font-bold text-blue-black text-[20px]">Program Terbaru Kami</p>
+                    <p class="font-medium text-blue-black">Bekerja sama dengan partner, kami menyelenggarakan
+                        beberapa program untuk mendukung Pelajar Indonesia.</p>
+                </div>
             </div>
-        </a>
-    </footer>
+        </div>
+    </div>
+</footer>
+
+
+
+
 
     <!-- PAGE2 -->
     <section class="bg-gradient-to-tr from-[#2C99FF] to-[#005BB0]">
-        <div>
-            <div class="pt-[213px] pb-[140px] pl-[180px] flex ">
-                <img src="/img/LandingPage2Illustrasion.png" alt="" class="w-[600px] h-auto" />
-                <div class="text-white">
-                    <p class="text-[38px] font-extrabold pr-[550px]">Welcome To Nexus Network Education !</p>
-                    <p class="text-[20px] font-semibold pr-[550px] mt-[40px]">Nexus Network Education menghadirkan fitur
-                        unggulan seperti Personalized Learning Paths, Expert-Led
+        <div class="container mx-auto px-6 lg:px-16">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-10 pt-24 pb-16">
+                <img src="/img/LandingPage2Illustrasion.png" alt="Nexus Illustration"
+                    class="w-full max-w-md lg:w-[600px] h-auto" />
+                <div class="text-white mt-10 lg:mt-0">
+                    <p class="text-[32px] lg:text-[38px] font-extrabold text-center lg:text-left">
+                        Welcome To Nexus Network Education!
+                    </p>
+                    <p class="text-[18px] lg:text-[20px] font-semibold mt-6 lg:mt-8 text-center lg:text-left">
+                        Nexus Network Education menghadirkan fitur unggulan seperti Personalized Learning Paths,
+                        Expert-Led
                         Courses, dan Interactive Quizzes. Pengguna dapat melacak kemajuan dengan Progress Tracking,
                         belajar
                         kolaboratif melalui Community & Peer Learning, serta menikmati akses fleksibel dengan platform
                         yang
-                        Mobile-Friendly.</p>
+                        Mobile-Friendly.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- FOOTER 2 -->
-    <footer class="bg-[#EAEAEA] py-[50px] relative">
-        <div class="text-center text-blue-black">
-            <p class="font-bold text-[25px]">Learning Path</p>
-            <p class="mt-[12px] font-medium text-[18px] px-4 md:px-[700px]">
-                Learning path akan membantu Anda dalam belajar di Academy dengan kurikulum yang dibangun bersama pelaku
-                industri ternama.
+    <footer class="bg-[#EAEAEA] py-[50px]">
+        <div class="w-full mx-auto max-w-screen-xl text-center px-4 sm:px-6 lg:px-8">
+            <p class="font-bold text-[25px] text-blue-black">Learning Path</p>
+            <p class="mt-[12px] text-[18px] text-blue-black">
+                Learning path akan membantu Anda dalam belajar di Academy dengan kurikulum yang dibangun bersama
+                pelaku industri ternama.
             </p>
-        </div>
-        <div class="flex justify-center space-x-10 mt-[50px]">
-            <img src="/img/academy-googleatp-3 1.png" alt="Academy Google ATP"
-                class="h-auto max-h-[100px] object-contain">
-            <img src="/img/google-cloud-partner 1.png" alt="Google Cloud Partner"
-                class="h-auto max-h-[100px] object-contain">
-            <img src="/img/google-for-education-partner 1.png" alt="Google for Education Partner"
-                class="h-auto max-h-[100px] object-contain">
+            <div class="flex flex-wrap justify-center mt-[50px] gap-10">
+                <img src="/img/academy-googleatp-3 1.png" alt="Academy Google ATP"
+                    class="h-auto max-h-[100px] object-contain">
+                <img src="/img/google-cloud-partner 1.png" alt="Google Cloud Partner"
+                    class="h-auto max-h-[100px] object-contain">
+                <img src="/img/google-for-education-partner 1.png" alt="Google for Education Partner"
+                    class="h-auto max-h-[100px] object-contain">
+            </div>
         </div>
     </footer>
+
 
     <!-- PAGE 3 -->
     <section class="">
         <div class="text-center text-blue-black">
             <p class="mt-[150px] text-[30px] font-bold">Kenapa Nexus Network Education Berbeda</p>
-            <p class="mt-[11px] text[18px] px-[600px] font-medium
+            <p class="mt-[11px] text[18px] font-medium
             ">Saatnya bijak memilih sumber belajar. Tak hanya materi yang terjamin,Network Education juga memiliki
                 reviewer profesional yang akan mengulas kode Anda.</p>
         </div>
@@ -160,7 +179,8 @@
                     </div>
                     <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">February
                         2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind
+                        CSS
                     </h3>
                     <p class="mb-4 text-base font-normal text-blue-black dark:text-blue-blac">Get access to over 20+
                         pages
@@ -181,9 +201,12 @@
                     </div>
                     <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">March
                         2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-                    <p class="text-base font-normal text-blue-black dark:text-blue-blac">All of the pages and components
-                        are first designed in Figma and we keep a parity between the two versions even as we update the
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma
+                    </h3>
+                    <p class="text-base font-normal text-blue-black dark:text-blue-blac">All of the pages and
+                        components
+                        are first designed in Figma and we keep a parity between the two versions even as we update
+                        the
                         project.</p>
                 </li>
                 <li class="ms-4">
@@ -192,9 +215,11 @@
                     </div>
                     <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">April
                         2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind
+                        CSS
                     </h3>
-                    <p class="text-base font-normal text-blue-black dark:text-blue-black">Get started with dozens of web
+                    <p class="text-base font-normal text-blue-black dark:text-blue-black">Get started with dozens of
+                        web
                         components and interactive elements built on top of Tailwind CSS.</p>
                 </li>
             </ol>
@@ -232,10 +257,6 @@
                     class="hover:underline">Nexus Network Education™</a>. All Rights Reserved.</span>
         </div>
     </footer>
-
-
-
-
 
 </body>
 
