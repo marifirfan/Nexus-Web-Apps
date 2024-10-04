@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-Montserrat">
+    <nav class="h-[100px] bg-white bg-opacity-75 backdrop-blur-sm flex items-center justify-between px-4 md:px-[170px] sticky top-0 z-10">
+        <!-- Logo NEXUS -->
+        <a href="Landingpage.html" class="font-extrabold text-[35px] text-lg text-blue1">NEXUS.</a>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="menu-button" class="text-blue1 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- List -->
+        <ul id="menu" class="hidden md:flex space-x-[30px] font-bold text-[16px] text-blue-text">
+            <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition duration-300">More</a></li>
+        </ul>
+
+        <!-- Sign In & Sign Up -->
+        <ul class="flex items-center space-x-[24px] font-bold text-[16px]">
+            <li class="text-blue1 hover:text-blue-600 transition duration-300"><a href="SignIn.html">Sign in</a></li>
+            <div class="w-[184px] h-[47px] bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105">
+                <button class="text-white"><a href="SignUp.html">SignUp</a></button>
+            </div>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="min-h-screen flex fle-col items-center justify-center py-6 px-4">
+            <div class="grid md:grid-cols-2 items-center gap-10 max-w-6xl w-full">
+                <div>
+                    <h2 class="lg:text-5xl text-4xl font-extrabold lg:leading-[55px] text-gray-800">
+                        Nexus Login for Start The Courses
+                    </h2>
+                    <p class="text-sm mt-6 text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Voluptate accusamus quia commodi odit? Praesentium nostrum neque ad obcaecati earum
+                        doloremque?</p>
+                    <p class="text-sm mt-12 text-gray-800">Don't have an account <a href="SignUp.html"
+                            class="text-blue-600 font-semibold hover:underline ml-1">Register here</a></p>
+                </div>
+
+                <form class="max-w-md md:ml-auto w-full">
+                    <h3 class="text-gray-800 text-3xl font-extrabold mb-8">
+                        Sign in
+                    </h3>
+
+                    <div class="space-y-4">
+                        <div>
+                            <input name="email" type="email" autocomplete="email" required
+                                class="bg-gray-100 w-full text-sm text-gray-800 px-4 py-3.5 rounded-md outline-blue-600 focus:bg-transparent"
+                                placeholder="Email address" />
+                        </div>
+                        <div>
+                            <input name="password" type="password" autocomplete="current-password" required
+                                class="bg-gray-100 w-full text-sm text-gray-800 px-4 py-3.5 rounded-md outline-blue-600 focus:bg-transparent"
+                                placeholder="Password" />
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div class="flex items-center">
+                                <input id="remember-me" name="remember-me" type="checkbox"
+                                    class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
+                                <label for="remember-me" class="ml-3 block text-sm text-gray-800">
+                                    Remember me
+                                </label>
+                            </div>
+                            <div class="text-sm">
+                                <a href="javascript:void(0);" class="text-blue-600 hover:text-blue-500 font-semibold">
+                                    Forgot your password?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="!mt-8">
+                        <button type="button"
+                            class="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded text-white bg-blue-600 hover:bg-blue-700 focus:outline-none">
+                            Log in
+                        </button>
+                    </div>
+
+                    <div class="space-x-6 flex justify-center mt-8">
+                        <button type="button" class="border-none outline-none">
+                            <img src="" alt="Social Media Icon">
+                        </button>
+                        <button type="button" class="border-none outline-none">
+                            <img src="" alt="Social Media Icon">
+                        </button>
+                        <button type="button" class="border-none outline-none">
+                            <img src="" alt="Social Media Icon">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Toggle mobile menu
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

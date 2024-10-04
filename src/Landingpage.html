@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Network Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <style>
+        * {
+            border: 1px solid red;
+        }
+    </style> -->
+</head>
+
+<body class="font-Montserrat">
+    <nav
+        class="h-[100px] bg-white bg-opacity-75 backdrop-blur-sm flex items-center justify-between px-4 md:px-[170px] sticky top-0 z-10">
+        <!-- Logo NEXUS -->
+        <a href="Landingpage.html" class="font-extrabold text-[35px] text-lg text-blue1">NEXUS.</a>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="menu-button" class="text-blue1 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- List -->
+        <ul id="menu" class="hidden md:flex space-x-[30px] font-bold text-[16px] text-blue-text">
+            <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+            <li><a href="#" class="hover:text-blue-400 transition duration-300">More</a></li>
+        </ul>
+
+        <!-- Sign In & Sign Up -->
+        <ul class="flex items-center space-x-[24px] font-bold text-[16px]">
+            <li class="text-blue1 hover:text-blue-600 transition duration-300"><a href="SignIn.html">Sign in</a></li>
+            <div
+                class="w-[184px] h-[47px] bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105">
+                <button class="text-white"><a href="SignUp.html">SignUp</a></button>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- LOGIN FORM -->
+    <section class="bg-transparent hidden">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <div
+                class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-blue-black bg-opacity-65 backdrop-blur-sm dark:border-gray-700">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1
+                        class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                        Sign in to your account
+                    </h1>
+                    <form class="space-y-4 md:space-y-6" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                email</label>
+                            <input type="email" name="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="name@company.com" required="">
+                        </div>
+                        <div>
+                            <label for="password"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required="">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="remember" aria-describedby="remember" type="checkbox"
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                                        required="">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="remember" class="text-gray-500 dark:text-gray-300">Remember me</label>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot
+                                password?</a>
+                        </div>
+                        <button type="submit"
+                            class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none 
+                            focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign
+                            in</button>
+                        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                            Don’t have an account yet? <a href="#"
+                                class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- GREETING TEXT -->
+        <div class="flex items-center justify-between mt-[70px] mx-[182px]">
+            <!-- Teks -->
+            <div class="w-[800px] text-center">
+                <h1 class="text-blue-text font-extrabold text-[55px] px-[100px] drop-shadow-xl">
+                    Welcome To Nexus Network Education!
+                </h1>
+                <p class="text-blue-black font-semibold text-[24px] px-[130px] mt-[34px]">
+                    Empower Your Learning Journey with Nexus, Learn, Grow, and Succeed with Expert-Guided Courses
+                </p>
+            </div>
+
+            <!-- Ilustrasi Landing Page 1 -->
+            <div>
+                <img src="/img/LandingPage1Illustrasion.png" alt="" class="w-[600px] h-auto" />
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="mb-[120px]">
+            <button
+                class="w-[287px] h-[73px] bg-blue1 rounded-[500px] mx-[804px] mt-[60px] mb-[125px] font-bold text-[24px]
+                 text-white drop-shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-blue-black">
+                Explore Now
+            </button>
+        </div>
+
+    </section>
+
+    <!-- FOOTER 1 -->
+    <footer class="bg-[#EAEAEA] h-[348px] relative">
+        <div class="pl-[254px] pt-[100px] text-blue-black">
+            <p class="text-[30px] font-medium">Program Terbaru Kami</p>
+            <p class="text-[18px] pr-[1246px] font-light mt-[13px]">
+                Bekerja sama dengan partner, kami menyelenggarakan beberapa program untuk mendukung Pelajar Indonesia.
+            </p>
+        </div>
+
+        <!-- Card dengan posisi absolute -->
+        <a href="#"
+            class="drop-shadow-[100px] mt-[45px] absolute left-[960px] top-[37px] flex flex-col items-center bg-white border 
+            border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src="/img/Figma-to-Tailwind.png" alt="">
+            <div class="flex flex-col justify-between p-4 leadinga-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                    acquisitions 2021</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
+            </div>
+        </a>
+    </footer>
+
+    <!-- PAGE2 -->
+    <section class="bg-gradient-to-tr from-[#2C99FF] to-[#005BB0]">
+        <div>
+            <div class="pt-[213px] pb-[140px] pl-[180px] flex ">
+                <img src="/img/LandingPage2Illustrasion.png" alt="" class="w-[600px] h-auto" />
+                <div class="text-white">
+                    <p class="text-[38px] font-extrabold pr-[550px]">Welcome To Nexus Network Education !</p>
+                    <p class="text-[20px] font-semibold pr-[550px] mt-[40px]">Nexus Network Education menghadirkan fitur
+                        unggulan seperti Personalized Learning Paths, Expert-Led
+                        Courses, dan Interactive Quizzes. Pengguna dapat melacak kemajuan dengan Progress Tracking,
+                        belajar
+                        kolaboratif melalui Community & Peer Learning, serta menikmati akses fleksibel dengan platform
+                        yang
+                        Mobile-Friendly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER 2 -->
+    <footer class="bg-[#EAEAEA] py-[50px] relative">
+        <div class="text-center text-blue-black">
+            <p class="font-bold text-[25px]">Learning Path</p>
+            <p class="mt-[12px] font-medium text-[18px] px-4 md:px-[700px]">
+                Learning path akan membantu Anda dalam belajar di Academy dengan kurikulum yang dibangun bersama pelaku
+                industri ternama.
+            </p>
+        </div>
+        <div class="flex justify-center space-x-10 mt-[50px]">
+            <img src="/img/academy-googleatp-3 1.png" alt="Academy Google ATP"
+                class="h-auto max-h-[100px] object-contain">
+            <img src="/img/google-cloud-partner 1.png" alt="Google Cloud Partner"
+                class="h-auto max-h-[100px] object-contain">
+            <img src="/img/google-for-education-partner 1.png" alt="Google for Education Partner"
+                class="h-auto max-h-[100px] object-contain">
+        </div>
+    </footer>
+
+    <!-- PAGE 3 -->
+    <section class="">
+        <div class="text-center text-blue-black">
+            <p class="mt-[150px] text-[30px] font-bold">Kenapa Nexus Network Education Berbeda</p>
+            <p class="mt-[11px] text[18px] px-[600px] font-medium
+            ">Saatnya bijak memilih sumber belajar. Tak hanya materi yang terjamin,Network Education juga memiliki
+                reviewer profesional yang akan mengulas kode Anda.</p>
+        </div>
+        <!-- list path -->
+        <div class="flex justify-center mt-[88px] mb-[180px]">
+
+            <ol class=" relative border-s border-b-blue-black dark:border-gray-700">
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-blueborder-b-blue-black rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">February
+                        2022</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS
+                    </h3>
+                    <p class="mb-4 text-base font-normal text-blue-black dark:text-blue-blac">Get access to over 20+
+                        pages
+                        including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &
+                        Marketing pages.</p>
+                    <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-black bg-white border border-b-blue-black rounded-lg hover:bg-gray-100
+                         hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-white
+                         dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                        Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></a>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-blueborder-b-blue-black rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">March
+                        2022</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
+                    <p class="text-base font-normal text-blue-black dark:text-blue-blac">All of the pages and components
+                        are first designed in Figma and we keep a parity between the two versions even as we update the
+                        project.</p>
+                </li>
+                <li class="ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-blueborder-b-blue-black rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">April
+                        2022</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS
+                    </h3>
+                    <p class="text-base font-normal text-blue-black dark:text-blue-black">Get started with dozens of web
+                        components and interactive elements built on top of Tailwind CSS.</p>
+                </li>
+            </ol>
+
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER 2 -->
+    <footer class="bg-white rounded-lg shadow dark:bg-blue-black m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Nexus.</span>
+                </a>
+                <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href=""
+                    class="hover:underline">Nexus Network Education™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
