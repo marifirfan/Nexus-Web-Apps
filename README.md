@@ -1,6 +1,6 @@
 # Nexus Apps Network Education
 
-Author Muhammad Arif Irfan.
+Muhammad Arif Irfan.
 
 ## Description
 
