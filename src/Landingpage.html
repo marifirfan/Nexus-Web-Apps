@@ -33,7 +33,7 @@
             </button>
         </div>
 
-        <!-- List -->
+        <!-- Navbar Links -->
         <ul id="menu" class="hidden md:flex space-x-[30px] font-bold text-[16px] text-blue-text">
             <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
             <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
@@ -42,13 +42,38 @@
 
         <!-- Sign In & Sign Up -->
         <ul class="flex items-center space-x-[24px] font-bold text-[16px]">
-            <li class="text-blue1 hover:text-blue-600 transition duration-300"><a href="SignIn.html">Sign in</a></li>
-            <div
-                class="w-[184px] h-[47px] bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105">
-                <button class="text-white"><a href="SignUp.html">SignUp</a></button>
-            </div>
+            <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm md:text-[16px] sm:text-[12px]"><a
+                    href="SignIn.html">Sign in</a></li>
+            <li>
+                <div
+                    class="w-[184px] h-[47px] bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105 ">
+                    <button class="text-sm md:text-white sm:text-[12px]"><a href="SignUp.html">SignUp</a></button>
+                </div>
+            </li>
         </ul>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-[100px] left-0 w-full bg-white shadow-md hidden">
+            <ul class="flex flex-col space-y-4 p-4">
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition duration-300">More</a></li>
+                <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm"><a href="SignIn.html">Sign
+                        in</a></li>
+                <li>
+                    <div
+                        class="w-full bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105">
+                        <button class="w-full text-sm"><a href="SignUp.html">SignUp</a></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <script src="navbar.js">
+    </script>
+
+
 
     <section>
         <!-- GREETING TEXT -->
@@ -83,34 +108,34 @@
     </section>
 
 
-<!-- FOOTER 1 -->
-<footer class="bg-[#EAEAEA] py-[50px]">
-    <div class="w-full mx-auto max-w-screen-xl text-center px-4 sm:px-6 lg:px-8">
-        <!-- Judul Program Terbaru -->
-        <p class="font-medium text-[30px] text-blue-black">Program Terbaru Kami</p>
+    <!-- FOOTER 1 -->
+    <footer class="bg-[#EAEAEA] py-[50px]">
+        <div class="w-full mx-auto max-w-screen-xl text-center px-4 sm:px-6 lg:px-8">
+            <!-- Judul Program Terbaru -->
+            <p class="font-medium text-[30px] text-blue-black">Program Terbaru Kami</p>
 
-        <!-- Deskripsi -->
-        <p class="mt-[12px] text-[16px] text-blue-black">
-            Bekerja sama dengan partner, kami menyelenggarakan beberapa program untuk mendukung Pelajar Indonesia.
-        </p>
+            <!-- Deskripsi -->
+            <p class="mt-[12px] text-[16px] text-blue-black">
+                Bekerja sama dengan partner, kami menyelenggarakan beberapa program untuk mendukung Pelajar Indonesia.
+            </p>
 
-        <!-- Kartu Program -->
-        <div class="flex justify-center mt-[30px]">
-            <div class="flex w-[720px] h-[263px] bg-white shadow-lg rounded-lg overflow-hidden">
-                <!-- Gambar -->
-                <img src="/img/Figma-to-Tailwind.png" alt="AWS Logo"
-                    class="w-[183px] h-[183px] object-contain m-[20px]">
-                <!-- Deskripsi Kartu -->
-                <div class="flex flex-col justify-center px-[20px]">
-                    <p class="font-extralight text-blue-black">Oleh Amazon Web Service (AWS)</p>
-                    <p class="font-bold text-blue-black text-[20px]">Program Terbaru Kami</p>
-                    <p class="font-medium text-blue-black">Bekerja sama dengan partner, kami menyelenggarakan
-                        beberapa program untuk mendukung Pelajar Indonesia.</p>
+            <!-- Kartu Program -->
+            <div class="flex justify-center mt-[30px]">
+                <div class="flex w-[720px] h-[263px] bg-white shadow-lg rounded-lg overflow-hidden">
+                    <!-- Gambar -->
+                    <img src="/img/Figma-to-Tailwind.png" alt="AWS Logo"
+                        class="w-[183px] h-[183px] object-contain ml-[20px] mt-[30px]">
+                    <!-- Deskripsi Kartu -->
+                    <div class="flex flex-col justify-center px-[20px]">
+                        <p class="font-extralight text-blue-black">Oleh Amazon Web Service (AWS)</p>
+                        <p class="font-bold text-blue-black text-[20px]">Program Terbaru Kami</p>
+                        <p class="font-medium text-blue-black">Bekerja sama dengan partner, kami menyelenggarakan
+                            beberapa program untuk mendukung Pelajar Indonesia.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 
@@ -123,18 +148,24 @@
                 <img src="/img/LandingPage2Illustrasion.png" alt="Nexus Illustration"
                     class="w-full max-w-md lg:w-[600px] h-auto" />
                 <div class="text-white mt-10 lg:mt-0">
-                    <p class="text-[32px] lg:text-[38px] font-extrabold text-center lg:text-left">
-                        Welcome To Nexus Network Education!
-                    </p>
-                    <p class="text-[18px] lg:text-[20px] font-semibold mt-6 lg:mt-8 text-center lg:text-left">
-                        Nexus Network Education menghadirkan fitur unggulan seperti Personalized Learning Paths,
-                        Expert-Led
-                        Courses, dan Interactive Quizzes. Pengguna dapat melacak kemajuan dengan Progress Tracking,
-                        belajar
-                        kolaboratif melalui Community & Peer Learning, serta menikmati akses fleksibel dengan platform
-                        yang
-                        Mobile-Friendly.
-                    </p>
+                    <div>
+                        <p class="text-[32px] lg:text-[38px] font-extrabold text-center lg:text-left">
+                            Welcome To Nexus Network Education!
+                        </p>
+                    </div>
+                    <div class="">
+                        <p
+                            class="text-[18px] sm:text-center lg:text-[20px] font-normal mt-6 lg:mt-8 text-center lg:text-left">
+                            Nexus Network Education menghadirkan fitur unggulan seperti Personalized Learning Paths,
+                            Expert-Led
+                            Courses, dan Interactive Quizzes. Pengguna dapat melacak kemajuan dengan Progress Tracking,
+                            belajar
+                            kolaboratif melalui Community & Peer Learning, serta menikmati akses fleksibel dengan
+                            platform
+                            yang
+                            Mobile-Friendly.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
