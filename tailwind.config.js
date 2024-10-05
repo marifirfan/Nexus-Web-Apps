@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Montserrat': ['"Montserrat"', 'sans-serif'], // Pastikan ada fallback font
+        'Montserrat': ['"Montserrat"', 'sans-serif'],
       },
       colors: {
         'blue1': '#2C99FF',
