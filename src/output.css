@@ -1058,6 +1058,11 @@ video {
      object-fit: contain;
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1645,14 +1650,81 @@ video {
 }
 
 @media (min-width: 400px) and (max-width: 639px) {
+  .phone\:ml-\[10px\] {
+    margin-left: 10px;
+  }
+
+  .phone\:ml-\[100px\] {
+    margin-left: 100px;
+  }
+
+  .phone\:ml-\[90px\] {
+    margin-left: 90px;
+  }
+
+  .phone\:ml-\[80px\] {
+    margin-left: 80px;
+  }
+
+  .phone\:flex {
+    display: flex;
+  }
+
   .phone\:hidden {
     display: none;
+  }
+
+  .phone\:justify-center {
+    justify-content: center;
+  }
+
+  .phone\:px-\[200px\] {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .phone\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .phone\:px-\[120px\] {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .phone\:pl-\[10px\] {
+    padding-left: 10px;
+  }
+
+  .phone\:text-center {
+    text-align: center;
+  }
+
+  .phone\:text-\[8px\] {
+    font-size: 8px;
+  }
+
+  .phone\:text-\[1px\] {
+    font-size: 1px;
+  }
+
+  .phone\:text-\[12px\] {
+    font-size: 12px;
   }
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
+  .tablet\:flex {
+    display: flex;
+  }
+
   .tablet\:hidden {
     display: none;
+  }
+
+  .tablet\:text-center {
+    text-align: center;
   }
 }
 

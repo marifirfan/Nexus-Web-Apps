@@ -20,24 +20,25 @@
         <a href="Landingpage.html" class="font-extrabold text-[35px] text-lg text-blue1">NEXUS.</a>
 
         <!-- Mobile Menu Button -->
-        <div class="md:hidden">
+        <div class="laptop:hidden desktop:hidden">
             <button id="menu-button" class="text-blue1 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
         </div>
 
         <!-- Navbar Links -->
-        <ul id="menu" class="hidden md:flex space-x-[30px] font-bold text-[16px] text-blue-text">
+        <ul id="menu" class="hidden md:flex space-x-[30px] font-bold text-[16px] text-blue-text
+    phone:hidden tablet:hidden">
             <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
             <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
             <li><a href="#" class="hover:text-blue-400 transition duration-300">More</a></li>
         </ul>
 
         <!-- Sign In & Sign Up -->
-        <ul class="flex items-center space-x-[24px] font-bold text-[16px]">
+        <ul class="flex items-center space-x-[24px] font-bold text-[16px] 
+    miniphone:hidden phone:hidden minitablet:hidden tablet:hidden desktop:flex laptop:flex">
             <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm md:text-[16px] sm:text-[12px]"><a
                     href="SignIn.html">Sign in</a></li>
             <li>
@@ -54,8 +55,8 @@
                 <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
                 <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
                 <li><a href="#" class="hover:text-blue-400 transition duration-300">More</a></li>
-                <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm"><a href="SignIn.html">Sign
-                        in</a></li>
+                <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm"><a href="SignIn.html">
+                        Sign in</a></li>
                 <li>
                     <div
                         class="w-full bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105">
@@ -66,6 +67,8 @@
         </div>
     </nav>
 
+    <script src="navbar.js">
+    </script>
     <script src="navbar.js">
     </script>
 
