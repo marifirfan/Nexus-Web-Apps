@@ -558,6 +558,18 @@ video {
   width: 100%;
 }
 
+@media (min-width: 1px) {
+  .container {
+    max-width: 1px;
+  }
+}
+
+@media (min-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -1623,6 +1635,44 @@ video {
 
   .lg\:leading-\[55px\] {
     line-height: 55px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 399px) {
+  .miniphone\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 639px) {
+  .phone\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .tablet\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .laptop\:flex {
+    display: flex;
+  }
+
+  .laptop\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .desktop\:flex {
+    display: flex;
+  }
+
+  .desktop\:hidden {
+    display: none;
   }
 }
 

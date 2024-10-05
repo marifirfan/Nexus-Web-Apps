@@ -24,9 +24,9 @@
         <a href="Landingpage.html" class="font-extrabold text-[35px] text-lg text-blue1">NEXUS.</a>
 
         <!-- Mobile Menu Button -->
-        <div class="md:hidden">
+        <div class="laptop:hidden desktop:hidden">
             <button id="menu-button" class="text-blue1 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
@@ -34,14 +34,16 @@
         </div>
 
         <!-- Navbar Links -->
-        <ul id="menu" class="hidden md:flex space-x-[30px] font-bold text-[16px] text-blue-text">
+        <ul id="menu" class="hidden md:flex space-x-[30px] font-bold text-[16px] text-blue-text
+        phone:hidden tablet:hidden">
             <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
             <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
             <li><a href="#" class="hover:text-blue-400 transition duration-300">More</a></li>
         </ul>
 
         <!-- Sign In & Sign Up -->
-        <ul class="flex items-center space-x-[24px] font-bold text-[16px]">
+        <ul class="flex items-center space-x-[24px] font-bold text-[16px] 
+        miniphone:hidden phone:hidden minitablet:hidden tablet:hidden desktop:flex laptop:flex">
             <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm md:text-[16px] sm:text-[12px]"><a
                     href="SignIn.html">Sign in</a></li>
             <li>
@@ -58,8 +60,8 @@
                 <li><a href="#" class="hover:text-blue-400 transition duration-300">Program</a></li>
                 <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
                 <li><a href="#" class="hover:text-blue-400 transition duration-300">More</a></li>
-                <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm"><a href="SignIn.html">Sign
-                        in</a></li>
+                <li class="text-blue1 hover:text-blue-600 transition duration-300 text-sm"><a href="SignIn.html">
+                    Sign in</a></li>
                 <li>
                     <div
                         class="w-full bg-[#2C99FF] text-white flex items-center justify-center rounded-[54px] transition duration-300 hover:bg-blue-black hover:scale-105">
@@ -92,7 +94,7 @@
             </div>
 
             <!-- Ilustrasi Landing Page 1 -->
-            <div class="mt-[30px] md:mt-0">
+            <div class="mt-[30px] md:mt-0 tablet:hidden">
                 <img src="/img/LandingPage1Illustrasion.png" alt=""
                     class="w-[300px] sm:w-[400px] md:w-[600px] h-auto" />
             </div>
@@ -212,13 +214,10 @@
                     </div>
                     <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">February
                         2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind
-                        CSS
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, minus?
                     </h3>
-                    <p class="mb-4 text-base font-normal text-blue-black dark:text-blue-blac">Get access to over 20+
-                        pages
-                        including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &
-                        Marketing pages.</p>
+                    <p class="mb-4 text-base font-normal text-blue-black dark:text-blue-blac">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolores 
+                        aperiam cupiditate! Iusto, voluptas ex!.</p>
                     <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-black bg-white border border-b-blue-black rounded-lg hover:bg-gray-100
                          hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-white
                          dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
@@ -234,13 +233,10 @@
                     </div>
                     <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">March
                         2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit, amet consectetur adipisicing.
                     </h3>
-                    <p class="text-base font-normal text-blue-black dark:text-blue-blac">All of the pages and
-                        components
-                        are first designed in Figma and we keep a parity between the two versions even as we update
-                        the
-                        project.</p>
+                    <p class="text-base font-normal text-blue-black dark:text-blue-blac">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quidem nam dolorem consequuntur saepe quasi non quas quae?</p>
                 </li>
                 <li class="ms-4">
                     <div
@@ -248,12 +244,9 @@
                     </div>
                     <time class="mb-1 text-sm font-normal leading-none text-blue-blac dark:text-blue-black">April
                         2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind
-                        CSS
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lorem ipsum dolor sit amet.
                     </h3>
-                    <p class="text-base font-normal text-blue-black dark:text-blue-black">Get started with dozens of
-                        web
-                        components and interactive elements built on top of Tailwind CSS.</p>
+                    <p class="text-base font-normal text-blue-black dark:text-blue-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deleniti modi ad optio laboriosam nihil recusandae molestias?</p>
                 </li>
             </ol>
 
